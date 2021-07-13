@@ -52,6 +52,8 @@ A multifunctional video calling app (Microsoft Teams Clone)
     Backend - NodeJS & Express
     Frontend - EJS , CSS and Javascript
     
-## Demo of the application
+## System Architecture
+[Click Here](https://raw.githubusercontent.com/sachin-611/ms-team-clone/main/Untitled%20Diagram.jpg) to test out the application
 
+## Demo of the application
 [Click Here](https://protected-anchorage-09692.herokuapp.com/) to test out the application
