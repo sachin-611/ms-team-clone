@@ -49,8 +49,9 @@ A multifunctional video calling app (Microsoft Teams Clone)
 
 - The app will run on `localhost:3030` or on the port specified in the environment variable 
     Tech stack used
-    Backend - NodeJS & Express
-    Frontend - EJS , CSS and Javascript
+    * Backend - NodeJS & Express 
+    * Frontend - EJS , CSS and Javascript
+    * Database - Mongodb
     
 ## System Architecture
 [Click Here](https://raw.githubusercontent.com/sachin-611/ms-team-clone/main/Untitled%20Diagram.jpg) 
