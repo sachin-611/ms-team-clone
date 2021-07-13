@@ -50,7 +50,7 @@ A multifunctional video calling app (Microsoft Teams Clone)
 - The app will run on `localhost:3030` or on the port specified in the environment variable 
     Tech stack used
     Backend - NodeJS & Express
-    Frontend - Javascript and EJS
+    Frontend - EJS , CSS and Javascript
     
 ## Demo of the application
 
