@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- adding icon on the website header -->
+    <link rel = "icon" href = "img/icon.png" type = "image/x-icon">
+    <title>room</title>
+    <!-- importing all the dependencies -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script>
+        const ROOM_ID = "<%= roomId %>";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- creating meeting interface -->
+    <div class="meet">
+        <div class="meet_left">
+            <!-- left part of meeting interface -->
+            <div class="controls">
+                <!-- creating control buttons -->
+                <div class="control_block">
+                    <div class="mute" onclick="muteUnmute()">
+                        <i class="material-icons">mic_off</i>
+                        <span>Mute</span>
+                    </div>
+                    <div class="stop_video" onclick="videoStartStop()">
+                        <i class="material-icons">videocam_off</i>
+                        <span>Stop Video</span>
+                    </div>
+                </div>
+                <div class="control_block">
+                    <div class="invite_participant" onclick="inviteParticipant()">
+                        <i class="material-icons">person_add</i>
+                        <span>Invite participant</span>
+                    </div>
+                    <div class="participants_icon" onclick="getAllParticipants()">
+                        <i class="material-icons">people</i>
+                        <span>Participants</span>
+                    </div>
+                    <div class="chat" onclick="chat()">
+                        <i class="material-icons">chat</i>
+                        <span>Chat</span>
+                    </div>
+                    <div class="screen" onclick="shareScreen()">
+                        <i class="material-icons">screen_share</i>
+                        <span>Share screen</span>
+                    </div>
+                </div>
+                <div class="leaveclass">
+                        <button type="button" class="leave btn btn-danger btn-sm" onclick="endMeeting()">
+                            <span><i class="material-icons">call_end</i>  <b>Leave Meeting</b></span>
+                        </button>
+                </div>
+            </div>
+            <!-- creating video grid -->
+            <div class="main_videos">
+                <div id="video-grid"></div>
+            </div>
+        </div>
+        <!-- right part of meeting interface 
+            (which will be created when required using javascript) -->
+        <div class="meet_right">
+        </div>
+    </div>
+    <!-- importing scripts -->
+    <script src="js/script.js"></script>
+    <script src="js/event.js"></script>
+    <script src="js/screenshare.js"></script>
+</body>
+
+</html>

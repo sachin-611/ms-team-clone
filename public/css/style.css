@@ -1,0 +1,102 @@
+/* styling of meeting page */
+#video-grid{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.screen
+body{
+    margin:0;
+    padding:0;
+}
+video{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0.01rem; 
+    padding:0.1em;
+    transform:rotateY(180deg);
+}
+.screen-share{
+    transform: rotateY(0deg);
+}
+.meet{
+    height: 100vh;
+    display: flex;
+}
+.meet_left{
+    flex:1;
+    display :flex;
+    flex-direction:column;
+    overflow-y:auto;
+}
+.meet_right,.participants_list,.chat_box{
+    flex:0;
+    background-color: #242322;
+    display: flex;
+    flex-direction: column;
+}
+.main_videos{
+    flex-grow:1;
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.controls{
+    display:flex;
+    background-color: #1c1e20;
+    color:#d2d2d2;
+    padding:5px;
+    justify-content:space-between;
+}
+.header{
+    color:#d2d2d2;
+    text-align: center;
+    padding: 0.5em;
+}
+.all_messages,.participants_list{
+    flex-grow:1;
+    padding: 1em;
+    color:#EB534B;
+    overflow-y:scroll;
+}
+.new_message{
+    padding: 0.35em 0.4em 0.35em 0.2em;
+    display: flex;
+}
+#text{
+    border: none;
+    background: transparent;
+    color:#d2d2d2;
+}
+#send{
+    border:none;
+    border-radius: 0.5em;
+}
+.control_block{
+    display:flex
+}
+.mute,.stop_video,.invite_participant,.participants_icon,.screen,.chat,.leave{
+    display:flex;
+    flex-direction: column;
+    padding:0.3em;
+    cursor:pointer;
+}
+.screen:hover,.mute:hover,.stop_video:hover,.invite_participant:hover,.participants_icon:hover,.chat:hover,.leave:hover{
+    background-color:#343434;
+    border-radius: 0.5em;
+}
+.material-icons{
+    margin-left: auto;
+    margin-right: auto;
+}
+.mute,.stop_video{
+    color:#EB534B;
+}
+.leaveclass{
+    margin-top: 8px;
+    margin-right: 8px;
+    text-align:end;
+}

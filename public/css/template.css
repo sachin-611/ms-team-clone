@@ -1,0 +1,119 @@
+/* common styling for all the remaining pages */
+header{
+    background-color: #c2baed;
+    margin: 0%;
+    padding: 0%;
+}
+a{
+    font-family: sans-serif;
+    text-decoration: none;
+}
+iframe{
+  width:70%;
+  height:75vh;
+  display: flex;
+  margin:auto;
+}
+#start-video{
+  margin-top: 15%;
+}
+.heading{
+    float: left;
+    font-size: larger;
+    padding: 1%;
+    margin-left: 2%;
+}
+.heading > strong >a:hover{
+    color: black;
+}
+.navigation >li{
+    display: inline-block;
+    margin-right: 50px;
+    font-size: large;
+}
+hr{
+  background: black;
+  border: solid;
+}
+.navigation > li > a:hover{
+  color: black;
+}
+.clearfix{
+    clear: both;
+}
+.content{
+    font-family: sans-serif;
+    margin-top: 40%;
+    float: left;
+    font-size: larger;
+}
+img{
+  margin-top: 15%;
+}
+.front{
+    background-color: #c2baed;
+    background-size: auto;
+    width: auto;
+    height: auto;
+    margin:0%;
+}
+.navigation{
+    float: right;
+    background-color: #c2baed;
+    background-size: auto;
+}
+.join-button{
+    background-color: #c2baed;
+    padding: 2% 5% 2% 5%;
+    border-radius: 15px;
+    border: none;
+    font-family: sans-serif;
+    font-size: larger;
+}
+.join-button > a:hover{
+  color: black;
+}
+.create-button{
+  background-color: #c2baed;
+  padding: 2% 5% 2% 5%;
+  border-radius: 15px;
+  border: none;
+  font-family: sans-serif;
+  font-size: larger;
+}
+.create-button > a:hover{
+  color: black;
+}
+.join-details, .create-details{
+  font-family: sans-serif;
+  font-size: larger;
+}
+.details{
+  margin-right: auto;
+  margin-left: auto;
+}
+.vl{
+  border-left: 3px solid black;
+  height: 300px;
+  margin-left: 50%;
+  margin-top: -20%;
+}
+.about{
+  margin-top: 80px;
+}
+.about > p, h1{
+  text-align: center;
+}
+.about > hr{
+  width: 50%;
+}
+.image{
+  width:300px;
+  height: 300px;
+  margin-top: 0%;
+}
+.main{
+  background-color: #E9E4FF;
+  background-size: auto;
+  margin:0%;
+}

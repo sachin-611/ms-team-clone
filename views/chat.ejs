@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- adding icon on the website header -->
+    <link rel = "icon" href = "img/icon.png" type = "image/x-icon">
+    <title>Chat</title>
+    <link rel="stylesheet" href="css/chat.css" />
+    <link rel="stylesheet" href="css/common_chat.css" />
+    <link rel="stylesheet" href="css/template.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"/>
+  </head>
+  <body class="main">
+    <!-- setting background image -->
+    <style>
+      body {
+        background-image: url('img/back.jpg');
+      }
+      </style>
+      <!-- navigation bar -->
+    <header>
+      <div class="navbar">
+        <nav>
+          <ul class="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="/meet">Meet</a></li>
+            <li><a href="/chat">Chat</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+    <!-- creating join chat window -->
+    <div class="join-container">
+      <header class="join-header">
+				<h1><i class="far fa-comment"></i> Chat</h1>
+      </header>
+        <main class="join-main">
+				<form action="/chat" method="POST" id="chat-login">
+					<div class="form-control">
+						<label for="meet">Meet link</label>
+						<input name="meet" type="text" id="meet" placeholder="02a9-9naok-472hn-nsc3" required/>
+					</div>
+					<button type="submit" class="btn">Join Chat</button>
+				</form>
+			</main>
+		</div>
+  </body>
+</html>

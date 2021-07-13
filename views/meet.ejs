@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- adding icon on the website header -->
+    <link rel = "icon" href = "img/icon.png" type = "image/x-icon">
+    <title>Meet</title>
+    <!-- adding dependencies and styling -->
+    <link rel="stylesheet" href="css/template.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+  </head>
+  <body class="main">
+    <!-- navigation bar -->
+    <header>
+      <div class="navbar">
+        <nav>
+          <ul class="navigation">
+            <li><a href="/">Home</a></li>
+            <li><a href="/meet">Meet</a></li>
+            <li><a href="/chat">Chat</a></li>
+            <li><a href="/feedback">Feedback</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+    <div>
+      <!-- craeting  join meeting interface -->
+        <table class="details">
+          <tr>
+            <td>
+              <table cellspacing="70px">
+                <tr>
+                  <td>
+                    <table class="join-details">
+                      <tr>
+                        <td><label for="meet-link">Meet Link:</label></td>
+                        <td><input type="text" id="meet-link" name="link-join" placeholder="02a9-9naok-472hn-nsc3" required /></td>
+                      </tr>
+                    </table>
+                    <br />
+                    <button class="join-button" type="button" name="Join" onclick="joinMeet()">
+                      <a href="#">Join Meet</a>
+                    </button>
+                  </td>
+                  <td><div class="vl"></div></td>
+                  <td>
+                    <div class="create-details">
+                      <button class="create-button" type="button" name="Create" id="create-meet" onclick="generateMeetLink()">
+                        <a href="#">Create Meet</a>
+                      </button>
+                    </div>
+                  </td>
+                </form>
+                  <td>
+                    <img class="image" src="img/circle.png" alt="Image" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+    </div>
+    <script src="js/meet.js"></script>
+  </body>
+</html>
